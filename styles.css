@@ -1,0 +1,72 @@
+/* Reset de estilos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos do cabeçalho */
+.header {
+    
+    background-color: #0074D9;
+    color: #000000;
+    padding: 100px 0;
+    text-align: center;
+    background-image: url('ANA\ FERRARI\ ROSSI.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Para ajustar a imagem ao tamanho do elemento */
+}
+
+.header h1 {
+    margin: 0;
+}
+
+/* Estilos da navegação */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #000000;
+}
+
+/* Estilos do conteúdo principal */
+.main-content {
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Estilos do rodapé */
+.footer {
+    background-color: #ff6100;
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+}
