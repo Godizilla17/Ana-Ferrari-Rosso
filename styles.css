@@ -29,10 +29,7 @@ body {
 .header h1 {
     margin: 0;
 }
-
-/* Estilos da navegação */
 .navbar ul {
-
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -40,17 +37,17 @@ body {
 }
 
 .navbar ul li {
-    display: block;
-    margin-right: 0px;
-    margin-bottom: 10px
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .navbar ul li a {
     text-decoration: none;
     color: #ffffff; /* gitAlterado para cor branca para melhor contraste */
     background-color: #000000; /* Adicionado fundo azul aos botões */
-    display: block;
-    padding: 10px;
+    display: inline-block;
+    padding: 10px 20px;
     border-radius: 5px; /* Adicionado bordas arredondadas aos botões */
     font-weight: bold;
     transition: background-color 0.3s ease; /* Transição suave na mudança de cor de fundo */
