@@ -1,75 +1,40 @@
-/* Reset de estilos */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+.logo-container {
+    position: absolute;
+    top: 10px; /* Ajuste a distância do topo conforme necessário */
+    left: 10px; /* Ajuste a distância da esquerda conforme necessário */
+}
+.logo-container img {
+    width: 40px; /* Defina a largura desejada */
+    height: auto; /* Mantém a proporção da altura automaticamente */
 }
 
-/* Estilos gerais */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #ffffff;
-    color: #000000;
+.botoes-container {
+    text-align: center; /* Alinha os elementos filhos ao centro */
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-.header {
-    background-color: #0074D9;
-    color: #000000;
-    padding: 50px 0;
-    text-align: center;
-    background-image: url('ANA\ FERRARI\ ROSSI.png'); /* Substitua pelo caminho da sua imagem */
-    background-size: cover; /* Para ajustar a imagem ao tamanho do elemento */
-}
-
-.header h1 {
-    margin: 0;
-}
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-.navbar ul li {
+a.botao {
     display: inline-block;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: #ffffff; /* gitAlterado para cor branca para melhor contraste */
-    background-color: #000000; /* Adicionado fundo azul aos botões */
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 5px; /* Adicionado bordas arredondadas aos botões */
+    padding: 5px 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
-    transition: background-color 0.3s ease; /* Transição suave na mudança de cor de fundo */
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+    background-color: #ff7300;
+    border-radius: 5px;
+    margin: 0 1px; /* Adiciona espaçamento entre os botões */
+    border: 2px solid #000; /* Adiciona borda sólida de 2px com cor preta */
 }
 
-.navbar ul li a:hover {
-    background-color: #0056b3; /* Altera a cor de fundo ao passar o mouse */
-}
-.navbar ul li a:hover {
-    color: #000000;
+a.botao:hover {
+    background-color: #0056b3;
 }
 
-/* Estilos do conteúdo principal */
-.main-content {
-    padding: 50px 0;
-    text-align: center;
+a.botao:active {
+    background-color: #003d80;
 }
 
-/* Estilos do rodapé */
-.footer {
-    background-color: #ff6100;
-    color: #000000;
-    text-align: center;
-    padding: 20px 0;
+a.botao:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
