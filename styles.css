@@ -1,29 +1,36 @@
-.logo-container {
-    position: absolute;
-    top: 10px; /* Ajuste a distância do topo conforme necessário */
-    left: 10px; /* Ajuste a distância da esquerda conforme necessário */
+.container {
+    max-width: 960px; /* Define a largura máxima para o conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo na tela */
+    padding: 0 15px; /* Adiciona um pequeno espaçamento nas laterais */
 }
+
+.logo-container {
+    text-align: center; /* Centraliza a logo */
+    margin-bottom: 20px; /* Adiciona espaço entre a logo e os botões */
+}
+
 .logo-container img {
-    width: 40px; /* Defina a largura desejada */
+    width: 100%; /* Define a largura da logo como 100% do seu contêiner */
+    max-width: 200px; /* Define a largura máxima para a logo */
     height: auto; /* Mantém a proporção da altura automaticamente */
 }
 
 .botoes-container {
-    text-align: center; /* Alinha os elementos filhos ao centro */
+    text-align: center; /* Alinha os botões ao centro */
 }
 
 a.botao {
     display: inline-block;
-    padding: 5px 10px;
+    padding: 10px 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 16px; /* Ajusta o tamanho da fonte para dispositivos móveis */
     text-decoration: none;
     color: #000;
     background-color: #ff7300;
     border-radius: 5px;
-    margin: 0 1px; /* Adiciona espaçamento entre os botões */
-    border: 2px solid #000; /* Adiciona borda sólida de 2px com cor preta */
+    margin: 0 10px; /* Adiciona espaçamento entre os botões */
+    border: 2px solid #000;
 }
 
 a.botao:hover {
@@ -37,4 +44,17 @@ a.botao:active {
 a.botao:disabled {
     opacity: 0.5;
     cursor: not-allowed;
+}
+
+@media screen and (max-width: 768px) {
+    /* Estilos específicos para telas com largura máxima de 768 pixels (dispositivos móveis) */
+    .botoes-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a.botao {
+        margin: 10px 0;
+    }
 }
